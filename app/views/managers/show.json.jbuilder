@@ -1,0 +1,1 @@
+json.extract! @manager, :id, :first_name, :last_name, :age, :gender_string, :mobile_number, :home_number, :job_title, :street_number, :street_name, :suburb, :city, :post_code, :created_at, :updated_at

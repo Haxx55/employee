@@ -1,0 +1,84 @@
+<%= form_for(@manager) do |f| %>
+  <% if @manager.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@manager.errors.count, "error") %> prohibited this manager from being saved:</h2>
+
+      <ul>
+      <% @manager.errors.full_messages.each do |message| %>
+        <li><%= message %></li>      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+<div class="view-table">
+<table class="table table-responsive table-striped table-bordered tab">
+
+  <tr>
+    <th>First Name</th>
+    <td><%= f.text_field :first_name %></td>
+  </tr>
+   <tr>
+    <th>Last Name</th>
+    <td><%= f.text_field :last_name %></td>
+  </tr>
+ <tr>
+    <th>Age</th>
+    <td><%= f.number_field :age %></td>
+  </tr>
+   <tr>
+    <th>Gender</th>
+    <td><%= f.text_field :gender_string %></td>
+  </tr>
+   <tr>
+    <th>Mobile Number</th> 
+    <td><%= f.number_field :mobile_number %></td>
+  </tr>
+   <tr>
+    <th>Home Number</th>
+    <td><%= f.number_field :home_number %></td>
+  </tr>
+   <tr>
+    <th>Job Title</th>
+    <td><%= f.text_field :job_title %></td>
+  </tr>
+   <tr>
+    <th>Street Number</th>
+    <td><%= f.text_field :street_number %></td>
+  </tr>
+<tr>
+    <th>Street Name</th>
+    <td><%= f.text_field :street_name %></td>
+  </tr>
+  <tr>
+    <th>Suburb</th>
+    <td><%= f.text_field :suburb %></td>
+  </tr>
+<tr>
+    <th>City</th>
+    <td><%= f.text_field :city %></td>
+  </tr>
+  <tr>
+    <th>Wage</th>
+    <td><%= f.number_field :post_code %></td>
+  </tr>
+
+</table>
+
+</div>
+  <div class="actions btn btn-default">
+    <%= f.submit %>
+  </div>
+
+  <% end %>
+
+
+
+
+
+
+
+
+
+
+

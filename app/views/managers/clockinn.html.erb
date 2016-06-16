@@ -1,0 +1,28 @@
+
+
+
+<p>Successful</p>
+
+
+
+
+
+
+
+<%= javascript_tag do %>
+ 
+  var today = new Date();
+
+   
+ 
+
+
+function clockin() {
+            alert('SUCCESSFUL CLOCK IN AT  ' + today);
+        }
+        window.onload = clockin;
+        
+<% end %>
+
+
+<%= link_to "RETURN", root_path, :class => "btn btn-default" %>

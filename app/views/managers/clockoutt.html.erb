@@ -1,0 +1,26 @@
+
+<p>Successful</p>
+
+
+
+
+
+
+
+<%= javascript_tag do %>
+ 
+  var today = new Date();
+
+   
+ 
+
+
+function clockout() {
+            alert('SUCCESSFUL CLOCK OUT  ' + today);
+        }
+        window.onload = clockout;
+        
+<% end %>
+
+
+<%= link_to "RETURN", root_path, :class => "btn btn-default" %>

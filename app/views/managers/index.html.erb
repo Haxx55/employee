@@ -1,0 +1,52 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Employees</h1>
+<div class="table-responsive">
+<table class="table table-hover table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Age</th>
+      <th>Gender </th>
+      <th>Mobile number</th>
+      <th>Home number</th>
+      <th>Job title</th>
+      <th>Street number</th>
+      <th>Street name</th>
+      <th>Suburb</th>
+      <th>City</th>
+      <th>Wage</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @managers.each do |manager| %>
+      <tr>
+        <td><%= manager.first_name %></td>
+        <td><%= manager.last_name %></td>
+        <td><%= manager.age %></td>
+        <td><%= manager.gender_string %></td>
+        <td><%= manager.mobile_number %></td>
+        <td><%= manager.home_number %></td>
+        <td><%= manager.job_title %></td>
+        <td><%= manager.street_number %></td>
+        <td><%= manager.street_name %></td>
+        <td><%= manager.suburb %></td>
+        <td><%= manager.city %></td>
+        <td><%= manager.post_code %></td>
+        <td><%= link_to 'View', manager, :class => "btn-xs btn-default" %></td>
+        <td><%= link_to 'Edit', edit_manager_path(manager), :class => "btn-xs btn-default" %></td>
+        <td><%= link_to 'Delete', manager, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn-xs btn-default" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+<br>
+
+
+
+<%= link_to 'New Employee', new_manager_path, :class => "btn btn-default"%>
+<%= link_to 'Home', root_path, :class => "btn btn-default"%>
