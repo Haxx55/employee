@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
+  get 'user/login'
+
+  get 'login/log'
+
   get 'clockin' => "employee#clockin"
   get 'clockout' => "employee#clockout"
   get 'clockinn' => "managers#clockinn"
   get 'clockoutt' => "managers#clockoutt"
+
 
 
   get 'home/index'

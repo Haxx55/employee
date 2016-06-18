@@ -17,6 +17,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.view{
+	background-color: white;
+}
 
 body{
 	margin-left: 100px;
@@ -33,10 +36,41 @@ body{
 
 .view-table{
 	width: 300px;
+	margin-top: 100px;
+	margin-left: 450px;
+	background-color: white;
+}
+
+.sentence{
+	margin-left: 400px;
+
 }
 
 h1{
 	text-align: center;
+	font-size: 60px;
+}
+
+.buttonss{
+	float: right;
+	margin-right: 500px;
 }
 
 
+.title{
+}
+
+.submits{
+	margin-left: 450px;
+	top: 600px;
+}
+
+.area{
+	margin-left: 400px;
+
+float: left;
+}
+
+.password{
+	display: inline-block;
+}

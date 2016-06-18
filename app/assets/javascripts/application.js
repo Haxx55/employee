@@ -27,4 +27,8 @@ function clockin() {
             alert('SUCCESSFUL CLOCK IN AT  ' + today);
         }
         
+        function clockout() {
+            alert('SUCCESSFUL CLOCK OUT AT  ' + today);
+        }
+        
 

@@ -1,10 +1,11 @@
 class ManagersController < ApplicationController
   before_action :set_manager, only: [:show, :edit, :update, :destroy]
-
+  
   # GET /managers
   # GET /managers.json
   def index
     @managers = Manager.all
+     @password = "apple123"
   end
 
   def
@@ -15,13 +16,17 @@ class ManagersController < ApplicationController
   end
 
   def clockinn
+    @managers = Manager.all
     
   end
 
   def clockoutt
+    @managers = Manager.all
   end
 
   def login
+    @password = "apple123"
+    @input = ""
   end
 
 

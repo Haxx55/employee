@@ -1,7 +1,11 @@
 <h1>Clock In</h1>
-<p>Please Select your name and Clock In</p>
+<div class="sentence">
 
+<p>Please Select your name and Clock In</p>
+</div>
+<div class="area">
 <div class="dropdown">
+  
     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Employee List
     <span class="caret"></span></button>
     <ul class="dropdown-menu">
@@ -10,5 +14,12 @@
       <li class=> <%= manager.first_name %> <%= link_to 'Select', clockinn_path %> </li><br>
      <% end %>
     </ul>
+ 
   </div>
+  </div>
+
+
+  <div class="buttonss">
   <%= link_to 'Home', root_path, :class => "btn btn-default"%>
+</div>
+
